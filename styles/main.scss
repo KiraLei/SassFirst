@@ -1,0 +1,100 @@
+$color: #435A5C;
+$color-secundary:#BDE8EC;
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    nav{
+        display: flex;
+        justify-content: space-between;
+        background: $color-secundary;
+        align-items: center;
+        padding: 5px 50px 5px 50px;
+
+    
+    ul{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    li{
+        list-style: none;
+        text-align: center;
+
+    }
+    a{
+        
+        text-decoration: none;
+        color: $color;
+        padding: 10px 40px 10px;
+        font-weight: 500;
+        font-size: 24px;
+        box-shadow: 0px 0px 5px 0px $color;
+    }
+
+}
+
+.dropdown-content{
+    flex-direction: column;
+    position: absolute;
+    display:none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-content a{
+    display: block;
+    margin-top: 8px;
+    background-color: #F6A42D;
+    
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+    
+    &:hover{
+        .dropdown-content {
+            margin-top: 10px;
+            display:block;
+            margin-bottom: 20px;
+        }
+
+    }
+}
+/*botton red social*/
+
+.button{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1681fc;
+    max-width: 180px;
+    padding: 10px 40px 10px 30px;
+    border-radius: 3px;
+    margin-left: 80px;
+    
+}
+.button img{
+    padding-right: 25px;
+}
+h2{
+    color: #fff;
+}
+.div-social-networks{
+    display: flex;
+    /*justify-content: space-evenly;*/
+    padding-left: 50px;
+    margin: auto;
+    margin-top: 30px;
+}
+.git{
+    background-color: black;
+}
+.twitter{
+    background-color: #00acee ;
+
+}
